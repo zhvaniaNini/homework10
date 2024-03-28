@@ -23,7 +23,7 @@ print()
 
 english_scores = scores[:, 2]
 average_english_score = np.mean(english_scores)
-students_above_average_english = np.where(english_scores > average_english_score)[0]
+students_above_average_english = np.where(english_scores > average_english_score)
 students_names_above_average_english = students[students_above_average_english]
 students_scores_above_average_english = english_scores[students_above_average_english]
 print("სტუდენტები, რომლებსაც ინგლისურში საშუალოზე მაღალი ქულა აქვთ:")
